@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>หน้าแรกของสมุด</title>
+  <title>หน้าแรกห้องสมุด</title>
+  <link rel="stylesheet" href="./dist/output.css">
 </head>
+
 <body>
-  <header>
-    <h1>ห้องสมุดวิทยาลัย</h1>
-    <nav>
-      <ul>
-        <li><a href="#">หน้าแรก</a></li>
-        <li><a href="#">หนังสือ</a></li>
-        <li><a href="#">ติดต่อ</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+  <h1 class="text-xl font-bold">ห้องสมุดวิทยาลัย</h1>
+  <nav>
+    <ul class="flex gap-4">
+      <li><a href="index.html" class="hover:underline">หน้าแรก</a></li>
+      <li><a href="#" class="hover:underline">หนังสือ</a></li>
+      <li><a href="login.html" class="hover:underline">เข้าสู่ระบบ</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section>
+    <h2>ยินดีต้อนรับ</h2>
+    <p>เว็บไซต์นี้จัดทำขึ้นเพื่อการเรียนรู้</p>
+    <div class="max-w-sm bg-white rounded shadow p-4">
+  <h3 class="text-lg font-bold mb-2">ชื่อหนังสือ</h3>
+  <p class="text-gray-600">รายละเอียดหนังสือเล่มนี้ ...</p> 
+  <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">
+  อ่านเพิ่มเติม
+</button>
 
-  <main>
-    <section>
-      <h2>ยินดีต้อนรับ</h2>
-      <p>เว็บไซต์ห้องสมุดเพื่อการเรียนรู้</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 ห้องสมุดวิทยาลัย</p>
-  </footer>
+</div>
+  </section>
+</main>
+<footer>
+  <p>© 2025 วิทยาลัย</p>
+</footer>
 </body>
 </html>
+
+<link rel="stylesheet" href="style.css">
